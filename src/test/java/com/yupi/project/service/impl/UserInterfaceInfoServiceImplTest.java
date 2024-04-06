@@ -1,6 +1,7 @@
 package com.yupi.project.service.impl;
 
-import com.yupi.project.service.UserInterfaceInfoService;
+import com.yupi.yuapicommon.service.InnerUserInterfaceInfoService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,8 +13,8 @@ import static org.junit.Assert.*;
 @SpringBootTest
 public class UserInterfaceInfoServiceImplTest {
 
-    @Resource
-    private UserInterfaceInfoService userInterfaceInfoService;
+    @DubboReference
+    private InnerUserInterfaceInfoService userInterfaceInfoService;
 
     @Test
     public void invokeCount() {

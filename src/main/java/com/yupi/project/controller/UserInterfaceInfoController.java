@@ -11,9 +11,10 @@ import com.yupi.project.exception.BusinessException;
 import com.yupi.project.model.dto.userinterfaceinfo.UserInterfaceInfoAddRequest;
 import com.yupi.project.model.dto.userinterfaceinfo.UserInterfaceInfoQueryRequest;
 import com.yupi.project.model.dto.userinterfaceinfo.UserInterfaceInfoUpdateRequest;
-import com.yupi.project.model.entity.UserInterfaceInfo;
-import com.yupi.project.model.entity.User;
 import com.yupi.project.service.UserInterfaceInfoService;
+import com.yupi.yuapicommon.model.entity.User;
+import com.yupi.yuapicommon.model.entity.UserInterfaceInfo;
+import com.yupi.yuapicommon.service.InnerUserInterfaceInfoService;
 import com.yupi.project.service.UserService;
 import com.yupi.yuapiclientsdk.client.YuApiClient;
 import lombok.extern.slf4j.Slf4j;
@@ -37,6 +38,7 @@ public class UserInterfaceInfoController {
 
     @Resource
     private UserInterfaceInfoService userInterfaceInfoService;
+
 
     @Resource
     private UserService userService;

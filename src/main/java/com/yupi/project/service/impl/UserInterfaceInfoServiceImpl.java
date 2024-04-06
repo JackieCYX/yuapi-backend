@@ -4,9 +4,10 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yupi.project.common.ErrorCode;
 import com.yupi.project.exception.BusinessException;
-import com.yupi.project.model.entity.UserInterfaceInfo;
+
 import com.yupi.project.mapper.UserInterfaceInfoMapper;
 import com.yupi.project.service.UserInterfaceInfoService;
+import com.yupi.yuapicommon.model.entity.UserInterfaceInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
